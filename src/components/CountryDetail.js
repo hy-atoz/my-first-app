@@ -1,5 +1,5 @@
-import React from 'react';
 import axios from 'axios';
+import React from 'react';
 import './CountryDetail.css';
 
 export default function CountryDetail() {
@@ -12,17 +12,6 @@ export default function CountryDetail() {
       setCountries(res.data);
     });
   }, []);
-
-  // setCountries((originalData) => [...originalData, data])
-
-  // function fetchData() {
-  //   const url = 'https://restcountries.com/v3.1/all';
-
-  //   fetch(url)
-  //     .then((res) => res.json())
-  //     .then((data) => console.log(data))
-  //     .catch((err) => console.err(err));
-  // }
 
   return (
     <div>
