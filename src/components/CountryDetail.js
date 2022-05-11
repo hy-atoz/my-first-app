@@ -1,5 +1,7 @@
 import axios from 'axios';
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import './CountryDetail.css';
 
 export default function CountryDetail() {
@@ -25,7 +27,11 @@ export default function CountryDetail() {
               return (
                 <div key={country.name.common} className='country-container'>
                   <h2>{country.name.common}</h2>
-                  <img src={country.flags.png} alt={country.name.common} />
+                  <LazyLoadImage
+                    src={country.flags.png}
+                    alt={country.name.common}
+                    effect='blur'
+                  />
                 </div>
               );
             })}
