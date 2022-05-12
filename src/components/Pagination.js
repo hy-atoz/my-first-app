@@ -4,18 +4,18 @@ import '../styles/pagination.css';
 function Pagination({ handlePageClick, pageCount }) {
   return (
     <ReactPaginate
-      nextLabel='Next >'
+      nextLabel='Next'
       onPageChange={handlePageClick}
-      pageRangeDisplayed={3}
+      pageRangeDisplayed={2}
       marginPagesDisplayed={2}
       pageCount={pageCount}
-      previousLabel='< Previous'
+      previousLabel='Previous'
       pageClassName='page-item'
-      pageLinkClassName='page-link'
+      pageLinkClassName='page-link disabled'
       previousClassName='page-item'
       previousLinkClassName='page-link'
       nextClassName='page-item'
-      nextLinkClassName='page-link'
+      nextLinkClassName='page-link disabled'
       breakLabel='...'
       breakClassName='page-item'
       breakLinkClassName='page-link'

@@ -11,7 +11,7 @@ function App() {
   const [currentItems, setCurrentItems] = useState(null);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 20;
+  const itemsPerPage = 10;
 
   // Get data from the api
   useEffect(() => {
