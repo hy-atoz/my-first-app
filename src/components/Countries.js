@@ -5,7 +5,7 @@ import Country from './Country';
 function Countries() {
   return (
     <SimpleGrid as='main' columns={4} spacing={10}>
-      <Country />
+      <Country itemsPerPage={20} />
     </SimpleGrid>
   );
 }
