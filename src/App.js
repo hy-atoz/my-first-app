@@ -1,14 +1,13 @@
-import ChangeLanguage from './components/ChangeLanguage';
-import CountryDetail from './components/CountryDetail';
-import SearchBar from './components/SearchBar';
+import { Box } from '@chakra-ui/react';
+import Countries from './components/Countries';
+import Title from './components/Title';
 
 function App() {
   return (
-    <div className='app-container'>
-      <SearchBar />
-      {/* <ChangeLanguage /> */}
-      <CountryDetail />
-    </div>
+    <Box marginX={8}>
+      <Title />
+      <Countries />
+    </Box>
   );
 }
 
