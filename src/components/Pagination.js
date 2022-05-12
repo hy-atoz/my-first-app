@@ -19,7 +19,7 @@ function Pagination({ handlePageClick, pageCount }) {
       breakLabel='...'
       breakClassName='page-item'
       breakLinkClassName='page-link'
-      containerClassName='pagination'
+      containerClassName='pagination justify-content-center'
       activeClassName='active'
       renderOnZeroPageCount={null}
     />
