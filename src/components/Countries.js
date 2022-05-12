@@ -1,11 +1,10 @@
 import { SimpleGrid } from '@chakra-ui/react';
-import React from 'react';
-import Country from './Country';
+import CurrentItems from './CurrentItems';
 
-function Countries() {
+function Countries({ currentItems }) {
   return (
-    <SimpleGrid as='main' columns={4} spacing={10}>
-      <Country itemsPerPage={20} />
+    <SimpleGrid as='main' columns={4} marginBottom={20} spacing={10}>
+      <CurrentItems currentItems={currentItems} />
     </SimpleGrid>
   );
 }
