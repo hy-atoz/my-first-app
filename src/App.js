@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Countries from './components/Countries';
 import Pagination from './components/Pagination';
+import SearchBar from './components/SearchBar';
 import Title from './components/Title';
 
 function App() {
@@ -35,9 +36,12 @@ function App() {
     setItemOffset(newOffset);
   }
 
+  // https://restcountries.com/v3.1/name/{name}
+
   return (
     <Box marginX={8} marginY={20}>
       <Title />
+      <SearchBar />
       <Countries currentItems={currentItems} />
       <Pagination handlePageClick={handlePageClick} pageCount={pageCount} />
     </Box>
