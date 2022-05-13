@@ -20,8 +20,8 @@ function App() {
 
     axios.get(url).then((res) => {
       setCountries(res.data);
-    }, []);
-  });
+    });
+  }, []);
 
   // Update to display a new set of result
   useEffect(() => {
